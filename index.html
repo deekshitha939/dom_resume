@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+document.body.style.fontFamily = 'Arial, sans-serif';
+var container = document.createElement('div');
+container.style.width = '60%';
+container.style.margin = '20px auto';
+container.style.padding = '20px';
+container.style.backgroundColor = 'peach';
+
+container.style.border = '2px solid #000';
+container.style.borderRadius = '10px';
+container.style.boxShadow = '2px 2px 10px rgba(0,0,0,0.2)';
+document.body.appendChild(container);
+
+
+var title = document.createElement('h1');
+title.innerText = 'Medi Deekshitha';
+title.style.textAlign = 'center';
+title.style.color = 'darkblue';
+container.appendChild(title);
+
+
+var contact = document.createElement('p');
+contact.innerHTML = '<strong>📍</strong> Bairamalguda, Hyderabad | <strong>📱</strong> 8897454189 | <strong>📧</strong> deekshithamedi@gmail.com';
+contact.style.textAlign = 'center';
+var link = document.createElement('p')
+link.innerHTML="<strong>Linkedin:</strong><a href= https://www.linkedin.com/in/deekshitha-medi-544a84333>https://www.linkedin.com/in/deekshitha-medi-544a84333</a>";
+link.style.textAlign = 'center';
+var git = document.createElement('p')
+git.innerHTML="<strong>Github:</strong><a href= https://github.com/deekshitha939>https://github.com/deekshitha199</a>";
+git.style.textAlign = 'center';
+container.append(contact,link);
+container.append(git);
+
+
+var objective = document.createElement('div');
+objective.style.backgroundColor = '#f8d7da';
+
+objective.style.padding = '10px';
+objective.style.marginTop = '10px';
+objective.style.borderRadius = '5px';
+var objectiveHeading = document.createElement('h2');
+objectiveHeading.innerText = 'Objective';
+objectiveHeading.style.color = 'red';
+objectiveHeading.style.borderBottom = '2px solid black';
+objective.appendChild(objectiveHeading);
+var objectiveText = document.createElement('p');
+objectiveText.innerText = 'To secure a position in an organization that enables me to utilize my skills in a challenging environment, where opportunities exist for innovative and challenging professions. Committed to delivering high-quality solutions, exceeding expectations, and contributing to the organization\'s success.';
+objective.appendChild(objectiveText);
+container.appendChild(objective);
+
+var education = document.createElement('div');
+education.style.backgroundColor = '#d4edda';
+education.style.padding = '10px';
+education.style.marginTop = '10px';
+education.style.borderRadius = '5px';
+var educationHeading = document.createElement('h2');
+educationHeading.style.borderBottom="2px solid"
+educationHeading.innerHTML = 'Education';
+educationHeading.style.color = 'green';
+education.appendChild(educationHeading);
+var edu1 = document.createElement('p');
+edu1.innerHTML = '<b>Rajiv Gandhi University of Knowledge Technologies Basar  &nbsp(2020-2024)</b> <br>- B.Tech in Electrical and Electronics Engineering';
+education.appendChild(edu1);
+var edu2 = document.createElement('p');
+edu2.innerHTML = '<b>Rajiv Gandhi University of Knowledge Technologies Basar &nbsp(2018-2020) </b><br>- Pre University Course';
+education.appendChild(edu2);
+var edu3 = document.createElement('p');
+edu3.innerHTML = '<b>Zilla Parishad High School Veliminedu &nbsp(2017-2018) </b><br>- Secondary School Education';
+education.appendChild(edu3);
+container.appendChild(education);
+
+
+var achievements = document.createElement('div');
+achievements.style.backgroundColor = '#fff3cd';
+achievements.style.padding = '10px';
+achievements.style.marginTop = '10px';
+achievements.style.borderRadius = '5px';
+var achievementsHeading = document.createElement('h2');
+achievementsHeading.innerText = 'Achievements';
+achievementsHeading.style.color = 'orange';
+achievementsHeading.style.borderBottom = '2px solid black';
+achievements.appendChild(achievementsHeading);
+var achievementsList = document.createElement('ul');
+var ach1 = document.createElement('li');
+ach1.innerText = 'School Topper in SSC 2018';
+achievementsList.appendChild(ach1);
+var ach2 = document.createElement('li');
+ach2.innerText = 'National Means Cum Merit Scholarship Holder';
+achievementsList.appendChild(ach2);
+var ach3 = document.createElement('li');
+ach3.innerText = 'Vidyadhaan Scholarship Holder';
+achievementsList.appendChild(ach3);
+var ach4 = document.createElement('li');
+ach4.innerText = 'Got First Rank in Mandal Level Talent Test';
+achievementsList.appendChild(ach4);
+achievements.appendChild(achievementsList);
+container.appendChild(achievements);
+
+
+var internship = document.createElement('div');
+internship.style.backgroundColor = '#c6e2ff';
+internship.style.padding = '10px';
+internship.style.marginTop = '10px';
+internship.style.borderRadius = '5px';
+var internshipHeading = document.createElement('h2');
+internshipHeading.innerText = 'Internship';
+internshipHeading.style.color = 'blue';
+internshipHeading.style.borderBottom= '2px solid black';
+
+internship.appendChild(internshipHeading);
+
+var internshipText = document.createElement('p');
+internshipText.innerHTML = '<b>Ex-Intern at TS TRANSCO </b>- Interned at a 220KV Substation, performing equipment monitoring, maintenance, and contributing to control room operations. Acquired hands-on expertise in power flow analysis and understanding protection systems, enhancing expertise in high-voltage systems.';
+internship.appendChild(internshipText);
+container.appendChild(internship);
+
+
+var projects = document.createElement('div');
+projects.style.backgroundColor = '#d1c4e9';
+projects.style.padding = '10px';
+projects.style.marginTop = '10px';
+projects.style.borderRadius = '5px';
+var projectsHeading = document.createElement('h2');
+projectsHeading.innerText = 'Projects';
+projectsHeading.style.color = 'purple';
+projectsHeading.style.borderBottom = '2px solid black';
+projects.appendChild(projectsHeading);
+var project1 = document.createElement('p');
+project1.innerHTML= '<b>Vacuum Cleaner </b>- Developed and successfully executed design for a vacuum cleaner prototype. Achieved efficient surface cleaning by utilizing vacuum cleaner equipment.';
+projects.appendChild(project1);
+
+var project2 = document.createElement('p');
+project2.innerHTML = '<b>Power Quality Improvement by Interline Unified Power Quality Conditioner</b> - Designed and implemented a MATLAB simulation improving power quality in electrical distribution systems.';
+projects.appendChild(project2);
+container.appendChild(projects);
+
+
+var interests = document.createElement('div');
+interests.style.backgroundColor = '#ffeb3b';
+interests.style.padding = '10px';
+interests.style.marginTop = '10px';
+interests.style.borderRadius = '5px';
+var interestsHeading = document.createElement('h2');
+interestsHeading.innerText = 'Interests';
+interestsHeading.style.color = 'goldenrod';
+interests.appendChild(interestsHeading);
+interestsHeading.style.borderBottom="2px solid black";
+var interest1 = document.createElement('p');
+interest1.innerText = 'Exploring new technologies and learning new things';
+interests.appendChild(interest1);
+var interest2 = document.createElement('p');
+interest2.innerText = 'Playing carrom';
+interests.appendChild(interest2);
+container.appendChild(interests);
+
+
+    </script>
+</body>
+</html>
